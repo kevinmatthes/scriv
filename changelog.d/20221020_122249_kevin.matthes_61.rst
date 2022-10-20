@@ -1,0 +1,4 @@
+Added
+.....
+
+- declared new configuration option ``preamble``
