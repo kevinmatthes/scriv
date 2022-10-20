@@ -197,11 +197,11 @@ class _Options:
     # The default preamble text to insert.
     preamble = attr.ib(
         type=str,
-        default="",
+        default="preamble.${config:format}",
         metadata={
             "doc": """\
-                This is the default text to be inserted before the actual
-                changelog entries.
+                This is the file storing the default text to be inserted before
+                the actual changelog entries.
                 """,
         }
     )
