@@ -194,14 +194,13 @@ class _Options:
         },
     )
 
-    # The default preamble text to insert.
-    preamble = attr.ib(
+    # The template for releases.
+    release_template = attr.ib(
         type=str,
-        default="preamble.${config:format}",
+        default="{{ content }}",
         metadata={
             "doc": """\
-                This is the file storing the default text to be inserted before
-                the actual changelog entries.
+                The template to use for release notes.
                 """,
         }
     )
