@@ -194,6 +194,17 @@ class _Options:
         },
     )
 
+    # The template for releases.
+    release_template = attr.ib(
+        type=str,
+        default="{{ content }}",
+        metadata={
+            "doc": """\
+                The template to use for release notes.
+                """,
+        }
+    )
+
 
 class Config:
     """
