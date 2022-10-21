@@ -1,4 +1,4 @@
 Added
 .....
 
-- declared new configuration option ``preamble``
+- declared new configuration option ``release_template``
